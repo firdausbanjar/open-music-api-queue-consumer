@@ -24,9 +24,11 @@ class PlaylistSongsService {
         }));
 
         return {
-            id: result.rows[0].id,
-            name: result.rows[0].name,
-            songs,
+            playlist: {
+                id: result.rows[0].id,
+                name: result.rows[0].name,
+                songs,
+            },
         };
     }
 }
