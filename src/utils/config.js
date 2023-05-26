@@ -7,6 +7,7 @@ const config = {
     },
     rabbitMq: {
         server: process.env.RABBITMQ_SERVER,
+        queue: process.env.QUEUE_NAME,
     },
 };
 
